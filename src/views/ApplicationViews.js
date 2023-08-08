@@ -6,6 +6,7 @@ import { Posts } from "../posts/Post"
 import { Categories } from "../views/categories"
 import { PostDetails } from "../posts/PostDetails"
 
+import { Tags } from "../components/tags/Tags.js"
 
 export const ApplicationViews = ({ token, setToken }) => {
   return <>
@@ -16,6 +17,7 @@ export const ApplicationViews = ({ token, setToken }) => {
       <Route path= "/posts" element={<Posts />} />
       <Route path= "/categories" element={<Categories />} />
       <Route path= "/posts/:postId" element={<PostDetails />} />
+      <Route path= "/tags" element={<Tags />} />
         {/* Add Routes here */}
         
       </Route>
