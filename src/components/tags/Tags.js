@@ -29,6 +29,8 @@ export const Tags = () => {
                     {tags.map(tag => (
                         <li key={tag.id}>
                             <h2>{tag.label}</h2>
+                            <button>Edit</button>
+                            <button>Delete</button>
                         </li>
                     ))}
                 </ul>
