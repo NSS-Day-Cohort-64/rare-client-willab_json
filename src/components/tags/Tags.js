@@ -44,12 +44,12 @@ export const Tags = () => {
             .then(response => response.json())
             .then(() => {
                 listTags() // Assuming this function returns a promise
-                .then(data => {
-                    setTags(data);
-                })
-                .catch(err => {
-                    setError(err.message);
-                });
+                    .then(data => {
+                        setTags(data);
+                    })
+                    .catch(err => {
+                        setError(err.message);
+                    });
             })
 
         console.log('Submitted label:', label)
