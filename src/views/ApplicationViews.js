@@ -5,8 +5,8 @@ import { Authorized } from "./Authorized"
 import { Posts } from "../posts/Post"
 import { Categories } from "../views/categories"
 import { PostDetails } from "../posts/PostDetails"
-
 import { Tags } from "../components/tags/Tags.js"
+import { PostForm } from "../posts/PostForm"
 
 export const ApplicationViews = ({ token, setToken }) => {
   return <>
@@ -17,6 +17,7 @@ export const ApplicationViews = ({ token, setToken }) => {
       <Route path= "/posts" element={<Posts />} />
       <Route path= "/categories" element={<Categories />} />
       <Route path= "/posts/:postId" element={<PostDetails />} />
+      <Route path= "/posts/form" element={<PostForm token={token}/>} />
       <Route path= "/tags" element={<Tags />} />
         {/* Add Routes here */}
         
